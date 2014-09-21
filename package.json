@@ -1,0 +1,27 @@
+{
+  "name": "loGym",
+  "version": "0.0.0",
+  "description": "Allows the creation and logging of gym stats. Basically a gym log.",
+  "repository": "git@github.com:MMRibot/loGym.git",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/lab/bin/lab -c -v && ./node_modules/lab/bin/lab -r html -o ./test/coverage.html",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "MMRibot",
+  "license": "ISC",
+  "devDependencies": {
+    "lab": "^3.2.1"
+  },
+  "dependencies": {
+    "couchbase": "^2.0.0",
+    "hapi": "^6.0.2",
+    "joi": "^4.6.1",
+    "request": "^2.37.0",
+    "underscore": "^1.6.0"
+  }
+}
