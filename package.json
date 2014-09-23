@@ -18,7 +18,6 @@
     "lab": "^3.2.1"
   },
   "dependencies": {
-    "couchbase": "^2.0.0",
     "hapi": "^6.0.2",
     "joi": "^4.6.1",
     "request": "^2.37.0",
