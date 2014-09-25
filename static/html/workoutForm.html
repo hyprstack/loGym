@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <!-- CSS Stylesheets -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+  <!-- Adding google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300|Satisfy' rel='stylesheet' type='text/css'>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../scripts/results.js"></script>
+</head>
+
+<body>
+  <!-- Title & logo -->
+  <div id="header">
+    <h1><i class="fa fa-book"></i> loGym</h1>
+  </div>
+
+  <!-- Main body of page -->
+  <main role=”main”>
+      <div id="description">
+          <p>Fill in your workout and then press <i>submit<i> when you are done.</p>
+          <p>You can add an extra column by pressing the <i class="fa fa-plus-circle"></i> sign on your screen.</p>
+      </div>
+
+      <div id="workouts">
+        <form id="workout-form">
+              <label for="exercise" class="lables">Exercise</lable><input type="text" id="exercise" placeholder="Which exercise?" autofocus />
+              <label for="musclegroup" class="lables">Muscle-Group</lable><input type="text" id="musclegroup" placeholder="Which muscle-group?" />
+
+              <div id="sets">
+                  <label for="reps" class="lables">Reps</lable><input type="number" id="reps" class="reps-column" placeholder="How many reps?" />
+                  <label for="kilos" class="lables">Kg's</lable><input type="number" id="kilos" class="kilos-column" placeholder="How much Kg?" />
+              </div>
+              <button id="add-column"class="add-buttons" type="button"><i class="fa fa-plus-circle fa-2x"></i></button>
+              <button id="add-row" class="add-buttons" type="button"><i class="fa fa-arrow-circle-down fa-2x"></i></button>
+              <button id="submit-workout" type="submit" name="submitbutton"><strong>Save Workout</strong></button>
+        </form>
+      </div>
+
+  </main>
+
+</body>
+</html>
