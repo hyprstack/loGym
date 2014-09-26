@@ -1,0 +1,13 @@
+h1 {
+
+}
+
+form {
+  border-style: solid;
+  border-color: #F5ECCE;
+  width: auto;
+}
+
+label.labels {
+    display: block;
+}
