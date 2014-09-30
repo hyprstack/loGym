@@ -1,13 +1,24 @@
-h1 {
-  color: blue;
+html, body, #wrapper {
+    width: 100%;
+    min-height: 100%;
 }
 
-form {
-  border-style: solid;
-  border-color: #F5ECCE;
-  width: auto;
+body {
+  background-color: #483D8B;
+}
+
+h1 {
+  color: #D3D3D3;
 }
 
 label.labels {
     display: block;
+}
+
+div#forms {
+  background-color: #6A5ACD;
+}
+
+div#description p {
+  color: #F0FFFF;
 }

@@ -5,6 +5,7 @@ var rs = require('./lib/modules/routes.js');
 
 
 var config= { };
+
 var server = Hapi.createServer(process.env.PORT || 8080, config);
 
 server.route(rs);
