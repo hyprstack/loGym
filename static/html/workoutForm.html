@@ -6,7 +6,7 @@
 
   <!-- CSS Stylesheets -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="static/styles/main.css">
 
 
   <!-- Adding google fonts -->
@@ -14,7 +14,7 @@
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="../scripts/results.js"></script>
+  <script type="text/javascript" src="static/scripts/addsWorkouts.js"></script>
 </head>
 
 <body>
@@ -31,19 +31,24 @@
           <p>To add an extra exercise, click the <i class="fa fa-arrow-circle-down"></i> sign on your screen.</p>
       </div>
 
-      <div id="workouts">
-        <form id="workout-form" action="/addworkout">
-              <label for="exercise" class="labels">Exercise</label><input type="text" id="exercise" placeholder="Which exercise?" autofocus />
-              <label for="musclegroup" class="labels">Muscle-Group</label><input type="text" id="musclegroup" placeholder="Which muscle-group?" />
+      <div id="forms">
+          <form id="workout-form" action="/addworkout">
 
-              <div id="sets">
-                  <label for="reps" class="labels">Reps</label><input type="text" id="reps" class="reps-column" placeholder="How many reps?" />
-                  <label for="kilos" class="labels">Kg's</label><input type="text" id="kilos" class="kilos-column" placeholder="How much Kg?" />
+              <div class="workouts">
+                  <label for="exercise" class="labels">Exercise</label><input type="text" id="exercise" placeholder="Which exercise?" autofocus />
+                  <label for="musclegroup" class="labels">Muscle-Group</label><input type="text" id="musclegroup" placeholder="Which muscle-group?" />
+
+                  <div class="sets">
+                      <label for="reps" class="labels">Reps</label><input type="text" id="reps" class="reps-column" placeholder="How many reps?" />
+                      <label for="kilos" class="labels">Kg's</label><input type="text" id="kilos" class="kilos-column" placeholder="How much Kg?" />
+                  </div>
+                  <hr>
               </div>
-              <button id="add-column"class="add-buttons" type="button"><i class="fa fa-plus-circle fa-2x"></i></button>
-              <button id="add-row" class="add-buttons" type="button"><i class="fa fa-arrow-circle-down fa-2x"></i></button>
+
+              <button id="add-set"class="add-buttons" type="button"><i class="fa fa-plus-circle fa-2x"></i></button>
+              <button id="add-exercise" class="add-buttons" type="button"><i class="fa fa-arrow-circle-down fa-2x"></i></button>
               <button id="submit-workout" type="submit" name="submitbutton"><strong>Save Workout</strong></button>
-        </form>
+          </form>
       </div>
 
   </main>
