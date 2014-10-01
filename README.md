@@ -15,15 +15,18 @@ delete logs, view and update existing logs.*
 
 - [x] Design Layout
 - [x] Implement RDD (Readme Driven Developement)
-- [x] Begin coding with tests (This is always best practice!)
-- [ ] Define function do add person to database
-- [ ] Define function to add workouts per user to database
-- [ ] Define function to retrieve user's workouts by exercise and returns date, muscle group and sets
-- [ ] Validation
-- [ ] Authentication
-- [x] Choose Database
-- [ ] Implement Database
-- [ ] Implement Hapi Views
+- [ ] Begin coding with tests (This is always best practice!)
+- [ ] Define function do add person to database (2nd iteration)
+- [x] Define function to add exercise to database
+- [ ] Define function to add exercises per user to database (2nd iteration)
+- [x] Define function to retrieve user's workouts by exercise and returns date, muscle group and sets
+- [ ] Validation for exercises
+- [ ] Validation for user (2nd iteration)
+- [ ] Authentication (2nd iteration)
+- [x] Choose Database (Couchbase)
+- [x] Implement Database
+- [ ] Define Views using Handlebars for response of successful post and retrieval from database
+- [ ] Implement Views
 - [ ] UI
 - [ ] Test everything works
 - [ ] Deploy App to Heroku
@@ -124,3 +127,43 @@ See this video to "learn" how to connect to *MongoDb* while using **Hapi.js**(Th
 * https://www.youtube.com/watch?v=CIPbmPUKyMI
 
 The module used in this video (*mongoose-simpledb*) can be found at: https://www.npmjs.org/package/mongoose-simpledb
+
+## Steps
+
+>These steps are based on the building of this application
+
+- Start by researching which tools you will be using (frameworks, database, dependencies)
+
+- Structure your project folder layout as best as possible based on what you want to accomplish.
+
+- Use modularity for clearer coding practices.
+
+- Create package.json for your project.
+
+- Create a file that will contain your main server. Write your server logic.
+
+- And test it!
+
+- Create a file that will contain routing functionality and export it so that your server can require it.
+
+- Test it!
+
+- Write your mapping function for your database. This will define how your request to the database will output the data.
+
+- In your router file manipulate the response from the database as to fit your requirements to expose to the end-user.
+
+- Test it!
+
+- Once you feel your server-side logic is complete, move on to the client-side functionality.
+
+- Define the templates for your html files and templates that you will apply on the server side.
+
+- Apply client-side Javascript. This project uses the jQuery library.
+
+- Apply CSS.
+
+- Test everything!
+
+- Deploy first iteration to Heroku.
+
+- Start work on second iteration!
