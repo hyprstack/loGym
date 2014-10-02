@@ -4,9 +4,16 @@ var Joi = require('joi');
 var rs = require('./lib/modules/routes.js');
 
 
-var config= { };
+var options = {
+   views: {
+        engines: {
+            html: require('handlebars')
+        },
+        path: path.join(__dirname, 'static/views')
+    }
+};
 
-var server = Hapi.createServer(process.env.PORT || 8080, config);
+var server = Hapi.createServer(process.env.PORT || 8080, options);
 
 server.route(rs);
 
