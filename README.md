@@ -27,7 +27,6 @@ delete logs, view and update existing logs.*
 - [x] Implement Database
 - [x] Define map function for database query/response
 - [ ] Define Views using Handlebars for response of successful post and retrieval from database
-- [ ] Implement Views
 - [ ] UI
 - [ ] Test everything works
 - [ ] Deploy App to Heroku
