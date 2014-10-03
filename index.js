@@ -9,7 +9,10 @@ var options = {
         engines: {
             html: require('handlebars')
         },
-        path: path.join(__dirname, 'static/views')
+        basePath: __dirname,
+        path: './static/views',
+        layoutPath: './static/views',
+        helpersPath: './static/views/helpers'
     }
 };
 
