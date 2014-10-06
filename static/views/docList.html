@@ -28,11 +28,11 @@
 
         <div id="content">
             <h2><strong>Workouts:</strong></h2>
-
-                      {{#each content}}{{date}}{{/each}}
-
-
-
+                <ul>
+                  {{#each content}}
+                    <li>{{workout.exercise}} - {{date}}</li>
+                  {{/each}}
+                </ul>
         </div>
 
     </main>
