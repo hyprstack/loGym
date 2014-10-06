@@ -167,3 +167,14 @@ The module used in this video (*mongoose-simpledb*) can be found at: https://www
 - Deploy first iteration to Heroku.
 
 - Start work on second iteration!
+
+---
+
+Random notes:
+
+> function getWorkouts should produce a list of the workouts in descending order (most recent to oldest) by exercise or muscle group. User choses and this triggers getWorkoutSearch
+> and sets the "search" parameter.
+> These should be links to the exercises done for that search criteria so the user can check the number of reps and kilos and the date if its by exercise
+> and list of exercises and date if he choses to search muscle group.
+
+ 
