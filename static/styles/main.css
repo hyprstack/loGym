@@ -22,3 +22,12 @@ div#forms {
 div#description p {
   color: #F0FFFF;
 }
+
+a:link    { color: #F0FFFF }  /* unvisited links */
+a:visited { color: #00c }  /* visited links   */
+a:hover   { color: #B8860B }
+a:active  { color: #FF4500 }  /* active links    */
+
+ul#links {
+  list-style-type: none;
+}
