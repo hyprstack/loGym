@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.mainList').hide();
 
     $(window).load(function(){
-      $('.mainList').slideDown(300);
+      $('.mainList').fadeIn(1300);
     });
 
 });

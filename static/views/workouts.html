@@ -6,7 +6,7 @@
 
   <!-- CSS Stylesheets -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="./../../static/styles/main.css">
 
 
   <!-- Adding google fonts -->
@@ -14,20 +14,43 @@
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="../scripts/......js"></script>
+
 </head>
 
 <body>
-  <!-- Title & logo -->
-  <div id="header">
-    <h1><i class="fa fa-book"></i> loGym</h1>
-  </div>
+    <!-- Title & logo -->
+    <div id="header">
+      <h1><i class="fa fa-book"></i> loGym</h1>
+    </div>
 
-  <!-- Main body of page -->
-  <main role=”main”>
+    <!-- Main body of page -->
+    <main role=”main”>
 
+        <div id="content">
+            <h2><strong>Workout</strong></h2>
 
-  </main>
+            {{#if content}}
+              {{#content}}
+                <p><strong>Date</strong> - {{date}}</p>
+                <p><strong>Muscle Group</strong> - {{workout.musclegroup}}</p>
+                <p><strong>Exercise</strong> - {{workout.exercise}}</p>
+                <p><strong>Sets</strong></p>
+                    <ul id="setList">
+                      {{#sets}}
+                      <li>Reps: {{#reps}} - KG: {{#kilos}}</li>
+                      {{/sets}}
+                    </ul>
+                {{/content}}
+            {{else}}
+                <p>There are not documents avalable.</p>
+            {{/if}}
+        </div>
+
+        <form>
+          <input type="button" id="homeButton" class="buttons" value="Home Page" onclick="window.location.href='/'">
+        </form>
+
+    </main>
 
 </body>
 </html>
