@@ -3,6 +3,14 @@ html, body, #wrapper {
     min-height: 100%;
 }
 
+div#header {
+  background-color: #4B0082;
+  padding: 0.5%;
+  margin-left: 0;
+  margin-right:0;
+  position: relative;
+}
+
 body {
   background-color: #483D8B;
 }
@@ -23,6 +31,29 @@ div#description p {
   color: #F0FFFF;
 }
 
+div#pages {
+  display: block;
+  height: 5em;
+  border-color: black;
+  border-style: solid;
+}
+
+.optionList {
+  position: relative;
+  float: left;
+  text-align: center;
+  padding: 1.5%;
+  margin-top: 2.5%;
+  font-size: auto;
+  border-style: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #F0F8FF;
+}
+
+a.optionList:visited { color: #F0F8FF }
+
 a:link    { color: #F0FFFF }  /* unvisited links */
 a:visited { color: #00c }  /* visited links   */
 a:hover   { color: #B8860B }
@@ -30,4 +61,9 @@ a:active  { color: #FF4500 }  /* active links    */
 
 ul#links {
   list-style-type: none;
+}
+
+ul#execList {
+  list-style-type: none;
+  color: #F0FFFF
 }
