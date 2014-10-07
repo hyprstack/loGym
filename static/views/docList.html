@@ -30,7 +30,7 @@
             <h2><strong>Workouts:</strong></h2>
                 <ul id="execList">
                   {{#each content}}
-                    <li>{{workout.exercise}} - {{date}}</li>
+                    <li><a href="/workout/{{personId}}{{date}}{{workout.exercise}}">{{workout.exercise}} - {{date}}</a></li>
                   {{/each}}
                 </ul>
         </div>
