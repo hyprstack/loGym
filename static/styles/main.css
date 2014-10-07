@@ -1,3 +1,5 @@
+/* ****************** General **************** */
+
 html, body, #wrapper {
     width: auto;
     min-height: 100%;
@@ -36,6 +38,17 @@ div#pages {
   display: block;
   height: 5em;
 }
+
+footer.info {
+  font-size: smaller;
+}
+
+p#author {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* *************** Links ************** */
 
 span#newDoc {
   margin-left: 5em;
@@ -80,15 +93,6 @@ a:visited { color: #00c }  /* visited links   */
 a:hover   { color: #B8860B }
 a:active  { color: #FF4500 }  /* active links    */
 
-footer.info {
-  font-size: smaller;
-}
-
-p#author {
-  padding-left: 0;
-  margin-left: 0;
-}
-
 ul#links {
   list-style-type: none;
   margin-left: -1.5em;
@@ -97,4 +101,34 @@ ul#links {
 ul#execList {
   list-style-type: none;
   color: #F0FFFF
+}
+
+/* ************ Buttons ************** */
+
+#add-set {
+  border-radius: 0;
+  border-style: none;
+  background-color: #6A5ACD;
+  box-shadow: none;
+}
+
+#remove-set {
+  border-radius: 0;
+  border-style: none;
+  background-color: #6A5ACD;
+  box-shadow: none;
+}
+
+.buttons { /* style for buttons */
+  line-height: auto;
+  padding: 0.5%;
+  border-radius: 10em;
+  background-color: #4B0082;
+  -webkit-box-shadow: 2px 6px 8px 0px rgba(49, 50, 50, 1);
+  -moz-box-shadow:    2px 6px 8px 0px rgba(49, 50, 50, 1);
+  box-shadow:         2px 6px 8px 0px rgba(49, 50, 50, 1);
+}
+
+#homeButton {
+  float: right;
 }
