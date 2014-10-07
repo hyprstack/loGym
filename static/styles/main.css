@@ -1,9 +1,10 @@
 html, body, #wrapper {
-    width: 100%;
+    width: auto;
     min-height: 100%;
 }
 
 div#header {
+  width: 100%;
   background-color: #4B0082;
   padding: 0.5%;
   margin-left: 0;
@@ -34,16 +35,32 @@ div#description p {
 div#pages {
   display: block;
   height: 5em;
-  border-color: black;
-  border-style: solid;
 }
 
-.optionList {
-  position: relative;
+span#newDoc {
+  margin-left: 5em;
+}
+
+span#latest {
+  margin-left: 0.5em;
+}
+
+span.mainList { /* span for main links */
+  display: inline;
   float: left;
-  text-align: center;
-  padding: 1.5%;
-  margin-top: 2.5%;
+  position: relative;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  padding: 0.5%;
+  border-radius: 10em;
+  background-color: #4B0082;
+  -webkit-box-shadow: 2px 6px 8px 0px rgba(49, 50, 50, 1);
+  -moz-box-shadow:    2px 6px 8px 0px rgba(49, 50, 50, 1);
+  box-shadow:         2px 6px 8px 0px rgba(49, 50, 50, 1);
+}
+
+.optionList { /* main links styling */
+  text-decoration: none;
   font-size: auto;
   border-style: none;
   -webkit-border-radius: 50%;
@@ -53,14 +70,28 @@ div#pages {
 }
 
 a.optionList:visited { color: #F0F8FF }
+a.optionList:hover { color: #B8860B }
+a.optionList:active {
+  color: #FF4500;
+}
 
 a:link    { color: #F0FFFF }  /* unvisited links */
 a:visited { color: #00c }  /* visited links   */
 a:hover   { color: #B8860B }
 a:active  { color: #FF4500 }  /* active links    */
 
+footer.info {
+  font-size: smaller;
+}
+
+p#author {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 ul#links {
   list-style-type: none;
+  margin-left: -1.5em;
 }
 
 ul#execList {
