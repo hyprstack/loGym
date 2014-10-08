@@ -67,6 +67,10 @@ ul#kilosList {
   margin-top: 0;
 }
 
+#navForm {
+  clear: both;
+}
+
 
 /* *************** Links ************** */
 
@@ -123,6 +127,14 @@ ul#execList {
   color: #F0FFFF
 }
 
+a.listContentExec{
+  text-decoration: none;
+  color: #F0FFFF;
+}
+
+a.listContentExec:visited { color: #F0FFFF }
+a.listContentExec:hover { color: #000000 }
+
 /* ************ Buttons ************** */
 
 #add-set {
@@ -139,6 +151,12 @@ ul#execList {
   box-shadow: none;
 }
 
+#submit-workout {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .buttons { /* style for buttons */
   line-height: auto;
   padding: 0.5%;
@@ -147,7 +165,7 @@ ul#execList {
   -webkit-box-shadow: 2px 6px 8px 0px rgba(49, 50, 50, 1);
   -moz-box-shadow:    2px 6px 8px 0px rgba(49, 50, 50, 1);
   box-shadow:         2px 6px 8px 0px rgba(49, 50, 50, 1);
-  clear: both;
+  border-style: solid;
 }
 
 #homeButton {

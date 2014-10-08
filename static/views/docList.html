@@ -30,13 +30,12 @@
             <h2><strong>Workouts:</strong></h2>
                 <ul id="execList">
                   {{#each content}}
-                    <li class="listContentExec"><a href="/workout/{{personId}}{{date}}{{workout.exercise}}">{{workout.exercise}} - {{date}}</a></li>
+                    <li><a href="/workout/{{personId}}{{date}}{{workout.exercise}}" class="listContentExec">{{workout.exercise}} - {{date}}</a></li>
                   {{/each}}
                 </ul>
         </div>
 
-        <form>
-          <input type="button" id="newExerciseButton" class="buttons" value="New Exercise" onclick="window.location.href='/newworkout'">
+        <form id="navForm">
           <input type="button" id="homeButton" class="buttons" value="Home Page" onclick="window.location.href='/'">
         </form>
 
