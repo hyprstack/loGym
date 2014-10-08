@@ -22,6 +22,10 @@ h1 {
   color: #D3D3D3;
 }
 
+.docCreatedResponse {
+  text-align: center;
+}
+
 label.labels {
     display: block;
 }
@@ -151,5 +155,9 @@ ul#execList {
 }
 
 #backButton {
+  float: left;
+}
+
+#newExerciseButton {
   float: left;
 }

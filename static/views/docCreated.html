@@ -27,12 +27,7 @@
     <main role=”main”>
 
         <div id="content">
-            <h2><strong>Workouts:</strong></h2>
-                <ul id="execList">
-                  {{#each content}}
-                    <li class="listContentExec"><a href="/workout/{{personId}}{{date}}{{workout.exercise}}">{{workout.exercise}} - {{date}}</a></li>
-                  {{/each}}
-                </ul>
+            <h2 id="docCreatedResponse">{{Response}}</h2>
         </div>
 
         <form>
