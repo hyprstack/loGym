@@ -48,9 +48,21 @@ p#author {
   margin-left: 0;
 }
 
-ul#setList {
+ul#repsList {
   list-style-type: none;
+  float: left;
 }
+
+ul#kilosList {
+  list-style-type: none;
+  float: left;
+}
+
+.resultListSets {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 
 /* *************** Links ************** */
 
@@ -131,6 +143,7 @@ ul#execList {
   -webkit-box-shadow: 2px 6px 8px 0px rgba(49, 50, 50, 1);
   -moz-box-shadow:    2px 6px 8px 0px rgba(49, 50, 50, 1);
   box-shadow:         2px 6px 8px 0px rgba(49, 50, 50, 1);
+  clear: both;
 }
 
 #homeButton {

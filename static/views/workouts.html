@@ -35,11 +35,18 @@
                 <p><strong>Muscle Group</strong> - {{workout.musclegroup}}</p>
                 <p><strong>Exercise</strong> - {{workout.exercise}}</p>
                 <p><strong>Sets</strong></p>
-                    <ul id="setList">
-                      {{#workout.sets}}
-                          <li>Reps: {{#each reps}}{{this}}{{/each}} -KG's: {{#each kilos}}{{this}}{{/each}}</li>
-                      {{/workout.sets}}
-                    </ul>
+                    {{#workout.sets}}
+                      <ul id="repsList" class="resultListSets">
+                          {{#each reps}}
+                            <li>Reps: {{this}}</li>
+                          {{/each}}
+                      </ul>
+                      <ul id="kilosList" class="resultListSets">
+                          {{#each kilos}}
+                            <li>KG's: {{this}}</li>
+                          {{/each}}
+                      </ul>
+                    {{/workout.sets}}
                 {{/content}}
             {{else}}
                 <p>There are not documents avalable.</p>
