@@ -20,14 +20,14 @@ delete logs, view and update existing logs.*
 - [x] Define function to add exercise to database
 - [ ] Define function to add exercises per user to database (2nd iteration)
 - [x] Define function to retrieve user's workouts by exercise and returns date, muscle group and sets
-- [ ] Validation for exercises
+- [x] Validation for exercises
 - [ ] Validation for user (2nd iteration)
 - [ ] Authentication (2nd iteration)
 - [x] Choose Database (Couchbase)
 - [x] Implement Database
 - [x] Define map function for database query/response
-- [ ] Define Views using Handlebars for response of successful post and retrieval from database
-- [ ] UI
+- [x] Define Views using Handlebars for response of successful post and retrieval from database
+- [x] UI
 - [ ] Test everything works
 - [ ] Deploy App to Heroku
 
@@ -176,5 +176,3 @@ Random notes:
 > and sets the "search" parameter.
 > These should be links to the exercises done for that search criteria so the user can check the number of reps and kilos and the date if its by exercise
 > and list of exercises and date if he choses to search muscle group.
-
- 
