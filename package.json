@@ -22,6 +22,6 @@
     "joi": "^4.6.1",
     "request": "^2.37.0",
     "underscore": "^1.6.0",
-    "couchbase": "^2.5.1"
+    "couchbase": "2.0.0"
   }
 }
