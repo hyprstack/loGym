@@ -3,7 +3,6 @@ var path = require('path');
 var Joi = require('joi');
 var rs = require('./lib/modules/routes.js');
 var db = require('./lib/modules/database.js');
-var couchbase = require('couchbase');
 
 
 var options = {
