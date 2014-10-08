@@ -36,9 +36,9 @@
                 <p><strong>Exercise</strong> - {{workout.exercise}}</p>
                 <p><strong>Sets</strong></p>
                     <ul id="setList">
-                      {{#sets}}
-                      <li>Reps: {{#reps}} - KG: {{#kilos}}</li>
-                      {{/sets}}
+                      {{#workout.sets}}
+                          <li>Reps: {{#each reps}}{{this}}{{/each}} -KG's: {{#each kilos}}{{this}}{{/each}}</li>
+                      {{/workout.sets}}
                     </ul>
                 {{/content}}
             {{else}}
@@ -47,6 +47,7 @@
         </div>
 
         <form>
+          <input type="button" id="backButton" class="buttons" value="Back" onclick="window.location.href='/workouts'">
           <input type="button" id="homeButton" class="buttons" value="Home Page" onclick="window.location.href='/'">
         </form>
 

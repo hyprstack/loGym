@@ -48,6 +48,10 @@ p#author {
   margin-left: 0;
 }
 
+ul#setList {
+  list-style-type: none;
+}
+
 /* *************** Links ************** */
 
 span#newDoc {
@@ -131,4 +135,8 @@ ul#execList {
 
 #homeButton {
   float: right;
+}
+
+#backButton {
+  float: left;
 }
