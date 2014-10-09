@@ -29,7 +29,7 @@ delete logs, view and update existing logs.*
 - [x] Define Views using Handlebars for response of successful post and retrieval from database
 - [x] UI
 - [ ] Test everything works
-- [ ] Deploy App to Heroku
+- [x] Deploy App to Heroku (Run failing! Can't find couchbase module)
 
 
 ---
