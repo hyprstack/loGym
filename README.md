@@ -164,7 +164,7 @@ The module used in this video (*mongoose-simpledb*) can be found at: https://www
 
 - Test everything!
 
-- Deploy first iteration to Heroku.
+- Deploy first iteration to Heroku. (**Currently Heroku does not run couchbase powered apps. The kurobase addon has been disabled.)**
 
 - Start work on second iteration!
 
