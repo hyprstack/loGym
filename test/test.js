@@ -4,7 +4,7 @@ var server = require('../'); // require index.js
 var request = require('request');
 
 
-lab.experiment("Test status response", function() {
+lab.experiment("Tests loGym code", function() {
   // tests
 
   lab.test("Render index.html file as home page", function(done){
@@ -19,5 +19,5 @@ lab.experiment("Test status response", function() {
       done();
     });
   });
-
+  
 });
