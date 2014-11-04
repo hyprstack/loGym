@@ -5,7 +5,7 @@
   "repository": "git@github.com:MMRibot/loGym.git",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test.js"
   },
   "scripts": {
     "test": "./node_modules/lab/bin/lab -c -v && ./node_modules/lab/bin/lab -r html -o ./test/coverage.html",
